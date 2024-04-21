@@ -65,11 +65,15 @@ img {
     max-width: 40%;
     float: left;
 }
-    .floatright {
-        margin-right: 2em;
-        max-width: 40%;
-        float: right;
-    }
+.logo {
+    max-width: 2.5%;
+}
+
+.floatright {
+    margin-right: 2em;
+    max-width: 40%;
+    float: right;
+}
 input {
     max-width: 95%;
 }
