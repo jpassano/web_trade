@@ -66,10 +66,10 @@ img {
     float: left;
 }
 .logo {
-    max-width: 2.5%;
+    max-width: 10%;
 }
 
-.floatright {
+.fright {
     margin-right: 2em;
     max-width: 40%;
     float: right;
@@ -83,9 +83,9 @@ textarea {
 }
 
 .landing {
-    margin: -55px 0 0 0;
     padding: 0px;
-    top: 0px;
+    /* top: -60px; */
+    margin:-70px 0 0 0; 
     position: relative;
 }
 
@@ -109,7 +109,7 @@ header {
 
 header h1 {
     color: white;
-    font-size: 8em;
+    font-size: 6 em;
     margin-top: 0%;
 }
 
@@ -382,7 +382,7 @@ p {
 
 /* @media all and (max-width: 890px) {} */
 
-@media all and (max-width: 323px) {
+@media all and (max-width: 450px) {
 
     p,
     ul,
@@ -393,37 +393,35 @@ p {
     h4 {
         text-align: center;
     }
+    .landing {
+        margin: 0px;
+    }
 
     .content {
         margin: 0px;
     }
 
     .cuadroIzq {
-        max-width: 100%;
+        max-width: none;
         display: block;
     }
 
     .cuadroDer {
-        max-width: 100%;
+        max-width: none;
         display: block;
     }
     .cuadroCentral div {    
         display: block; 
-        max-width: 99%;
+        max-width: none;
     }
     p {
         margin-right: auto; 
     }
     .tblgrid {
-        grid: repeat(12, 100%) / auto-flow dense;
+        display: block;
+        grid: none;
     }
 
-    img, .floatright {
-        max-width: 100%;
-        display: block;
-        margin: auto;
-        float: none;
-    }
     ul {
         padding: 0px;
     }
@@ -446,4 +444,18 @@ p {
         width: 100%;
     }
 
+    .long_ref {
+        font-size: medium;
+    }
+    img, .fright {
+        display: block;
+        margin: 0em;
+        max-width: 100%;
+        float: none;
+    }
+    .logo {
+        width: 100%;
+        display: block;
+
+    }
 }
